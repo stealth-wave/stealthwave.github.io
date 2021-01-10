@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <Title>Stealthwave.dev</Title>
+    <meta name="description" content="Hey, I'm stealthwave. This is my website.">
+    <meta name="Author" content="Stealthwave">
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/790355263621824532/790658422877847552/Pngtreewave_material_picture_3109463_1.png?width=645&height=645">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+  <p id="hi">stealthwave</p>
+  <p id="hello">Website Developer</p>
+  <a id="twitter" href="https://twitter.com/stealthwave1">Twitter</a>
+  <a id="github" href="https://github.com/stealth-wave">Github</a>
+    <a id="V" href="https://github.com/stealth-wave/stealthwave.dev/blob/master/index.html">v3</a>
+    <a id="DSC" href="https://dsc.bio/stealthwave">Discord Bio</a>
+
+</body>
+<script>
+
+</script>
+<style>
+@font-face {font-family:ap; src: url('https://cdn.glitch.com/41a92b01-f020-4289-bb54-88d9d0870a03%2FAcumin-BdPro.woff?v=1610077008250');}
+@font-face { font-family: custom; src: url('https://cdn.discordapp.com/attachments/700941766270124073/797646306650095636/aliseo.zip'); }
+body{
+
+    background-color:black;
+    overflow:hidden;
+
+}
+
+#hi{
+    position:absolute;
+   font-size:15vw;
+    color:white;
+    left:8.8%;
+    top:-15%;
+    font-family:ap;
+    
+}
+#hello{
+    position:absolute;
+    font-size:5vw;
+    left:31%;
+    top:38%;
+    color:white;
+    font-family:ap;
+}
+
+#github{
+    position:absolute;
+    color:white;
+    border: 3px solid red;
+    border-radius: 5px;
+    border-color:white;
+    left:35%;
+    text-decoration: none;
+    font-size:2.3vw;
+    top:65%;
+    font-family: ap;
+    vertical-align: center;
+    text-align: center;
+    height:7;
+    width:17;
+  
+
+}
+
+#github:hover {
+position:Absolute;
+background-color:white;
+color:black;
+}
+
+#twitter{
+    position:absolute;
+    color:white;
+    border: 3px solid red;
+    border-radius: 5px;
+    border-color:white;
+    left:60%;
+    text-decoration: none;
+    font-size:2.3vw;
+    top:65%;
+    vertical-align: center;
+    text-align: center;
+    
+    font-family: ap;
+    
+
+
+}
+
+#twitter:hover{
+    position:absolute;
+    background-color:white;
+    color:black;
+}
+
+#V{
+    position:absolute;
+    color:white;
+    font-family:ap;
+    top:90%;
+    left:50%;
+    font-size:2vw;
+    text-decoration:none;
+
+}
+
+#DSC{
+    position:absolute;
+    color:white;
+    border: 3px solid red;
+    border-radius: 5px;
+    border-color:white;
+    left:45%;
+    text-decoration: none;
+    font-size:2.3vw;
+    top:65%;
+    vertical-align: center;
+    text-align: center;
+    
+    font-family: ap;
+}
+
+#DSC:hover{
+    position:absolute;
+    background-color:white;
+    color:black;
+}
+
+#V:hover{
+    position:absolute;
+    text-decoration:underline;
+    color:white;
+
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
