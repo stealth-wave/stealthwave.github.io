@@ -18,11 +18,6 @@
     <a id="DSC" href="https://dsc.bio/stealthwave">Discord Bio</a>
 
 </body>
-<script>
-
-
-
-</script>
 <style>
 @font-face {font-family:ap; src: url('https://cdn.glitch.com/41a92b01-f020-4289-bb54-88d9d0870a03%2FAcumin-BdPro.woff?v=1610077008250');}
 @font-face { font-family: custom; src: url('https://cdn.discordapp.com/attachments/700941766270124073/797646306650095636/aliseo.zip'); }
