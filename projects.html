@@ -13,11 +13,13 @@
     <section id="Nav">
 
         <a id="Home" href="https://stealthwave.dev">Home</a>
-        <a id="Projects" href="projects.html">Projects</a>
+        <a id="Projects" href="https://stealthwave.dev/projects">Projects</a>
 
 
 
     </section>
+
+    
 
     <section id="box">
 
@@ -45,8 +47,8 @@
 
 
 
-<span id="Projects1">Projects</span>
-<span id="Working">A list of projects I have worked on or am currently working on.</span>
+<p id="Projects1">Projects</p>
+<p id="Working">A list of projects I have worked on or am currently working on.</p>
 
 
 
@@ -56,7 +58,10 @@
 </body>
 <script>
 
-  
+if(window.location.href == "https://stealthwave.dev/projects"){
+$("body").load("https://cdn.jsdelivr.net/gh/stealth-wave/stealthwave.github.io@master/projects.html")
+
+}
 
 </script>
 <style>
