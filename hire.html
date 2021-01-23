@@ -7,6 +7,16 @@
     <meta name="Author" content="Stealthwave">
     <link rel="shortcut icon" href="https://media.discordapp.net/attachments/798206604221743115/800809772298534972/image_2.png">
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H7LW0KFYM0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H7LW0KFYM0');
+</script>
 </head>
 <body>
 <Section id="Box">
@@ -15,12 +25,12 @@
     <p id="code">You are welcome to DM me on <a href="https://discord.com/users/597170794111434753" >Discord</a></p>
     <img id="twitter" src="https://media.discordapp.net/attachments/798206604221743115/800820960503529512/image_2021-01-18_151602.png" onclick="window.open('https://twitter.com/stealthwave1');" style="cursor: pointer;"></img>
 <img id="github" src="https://media.discordapp.net/attachments/798206604221743115/800825030250070016/25231.png" onclick="window.open('https://github.com/stealth-wave');" style="cursor: pointer;"></img>
-<img id="toggle" src="https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png" onclick="LightTheme(); changeImage(); changeImage1(); changeImage2()"></img>
+<img id="toggle" src="https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png" onclick="LightTheme(); changeImage(); changeImage1(); changeImage2(); LightThemeChange()"></img>
 
 </section>
 
-<img id="hireme" src="https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png" href="https://stealthwave.dev/hire" style="cursor: pointer;"</img>
-<img id="Homebutton" src="https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png" href="https://stealthwave.dev/" style="cursor: pointer;"</img>
+<a id="Hire" href="https://stealthwave.dev/hire"><img src="https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png" /></a>
+<a id="Home" href="https://stealthwave.dev/"><img src="https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png" /></a>
 
 
 
@@ -30,7 +40,7 @@
 <script>
 function LightTheme() {
   var element = document.body;
-  element.classList.toggle("light-mode");
+  element.classList.toggle("LightTheme");
   
 }
 
@@ -51,27 +61,34 @@ else
 
 function changeImage1() {
 
-if (document.getElementById("hireme").src == "https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png")
+if (document.getElementById("Hire").src == "https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png")
 {
-    document.getElementById("hireme").src = "https://media.discordapp.net/attachments/798204114596397146/802379456995393586/image_4.png";
+    document.getElementById("Hire").src = "https://media.discordapp.net/attachments/798204114596397146/802379456995393586/image_4.png";
 }
 else 
 {
-    document.getElementById("hireme").src = "https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png";
+    document.getElementById("Hire").src = "https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png";
 }
 }
 
 function changeImage2() {
 
-if (document.getElementById("Homebutton").src == "https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png")
+if (document.getElementById("Home").src == "https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png")
 {
-    document.getElementById("Homebutton").src = "https://media.discordapp.net/attachments/798206604221743115/802383514812809226/image_5.png";
+    document.getElementById("Home").src = "https://media.discordapp.net/attachments/798206604221743115/802383514812809226/image_5.png";
 }
 else 
 {
-    document.getElementById("Homebutton").src = "https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png";
+    document.getElementById("Home").src = "https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png";
 }
 }
+
+function LightThemeChange() {
+  document.documentElement.classList.add("LightTheme") // this will enable light mode
+  document.documentElement.classList.remove("LightTheme") // this will DISABLE lightmode=
+}
+
+
 
 </script>
 <style>
@@ -82,21 +99,44 @@ body{
 
 }
 
-#Homebutton{
+.LightTheme{
+    Background-color:white;
+}
+
+
+.LightTheme #Hire {
     position:absolute;
-    width:2.5vw;
+    mix-blend-mode:difference;
+    left:91.5%;
+    top:3.5%;
+
+}
+
+#Hire img{
+    position:absolute;
     height:2.5vw;
+    width:2.5vw;
+    left:91.5%;
+    top:3.5%;
+
+}
+
+#Home img{
+    position:absolute;
+    height:2.5vw;
+    width:2.5vw;
     left:87.2%;
     top:3.5%;
 }
-#hireme{
+
+
+.LightTheme #Home{
     position:absolute;
-    width:2.5vw;
-    height:2.5vw;
-    left:91.5%;
+    mix-blend-mode:difference;
+    left:87.2%;
     top:3.5%;
-    
-    
+    transition: all 0.5s;
+
 }
 
 
