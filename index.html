@@ -15,6 +15,8 @@
     <p id="code">I code things. Html & CSS Proficient. Nuxt.js novice.</p>
     <img id="twitter" src="https://media.discordapp.net/attachments/798206604221743115/800820960503529512/image_2021-01-18_151602.png" onclick="window.open('https://twitter.com/stealthwave1');" style="cursor: pointer;"></img>
 <img id="github" src="https://media.discordapp.net/attachments/798206604221743115/800825030250070016/25231.png" onclick="window.open('https://github.com/stealth-wave');" style="cursor: pointer;"></img>
+<img id="toggle" src="https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png" onclick="LightTheme(); changeImage()"></img>
+
 </section>
 
 
@@ -23,18 +25,66 @@
 
 
 </body>
+
+<script>
+
+function LightTheme() {
+  var element = document.body;
+  element.classList.toggle("light-mode");
+  
+}
+
+
+
+function changeImage() {
+
+if (document.getElementById("toggle").src == "https://media.discordapp.net/attachments/798206604221743115/802310220374081566/night_1.png")
+{
+    document.getElementById("toggle").src = "https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png";
+}
+else 
+{
+    document.getElementById("toggle").src = "https://media.discordapp.net/attachments/798206604221743115/802310220374081566/night_1.png";
+}
+}
+
+
+
+
+
+</script>
 <style>
+
 body{
     overflow:hidden;
     background-color:#2a2a2a;
 
 }
 
+
+
+
+#toggle{
+    position:absolute;
+    width:2.5vw;
+    height:2.5vw;
+    left:126%;
+    top:-33%;
+    cursor:pointer;
+}
+.light-mode{
+    background-color:#dedede;
+ 
+    
+}
+
+
+
 #Info{
     position:absolute;
     font-size:6vw;
     left:3%;
-    top:91%;
+    top:91%; 
     width:3vw;
     height:3vw;
 }
@@ -95,7 +145,10 @@ font-size:1vw;
     top:20%;
     left:20%;
     border-radius:3vw;
+    box-shadow: 10px 10px 5px #262626;
+
 }
+
 
 #code{
     position:absolute;
@@ -191,16 +244,17 @@ font-size:1vw;
 
 
 
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
