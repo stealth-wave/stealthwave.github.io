@@ -11,12 +11,19 @@
 <body>
 <Section id="Box">
     <img id="ME" src="https://media.discordapp.net/attachments/798206604221743115/800809772298534972/image_2.png" width="150vw" height="150vw">
-    <p id="Stealthwave">Hey, I'm stealthwave.</p>
-    <p id="code">I code things. Html & CSS Proficient. Nuxt.js novice.</p>
-   
-<img id="toggle" src="https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png" onclick="LightTheme(); changeImage()"></img>
+    <p id="Stealthwave">Looking to hire me to assist with your project?</p>
+    <p id="code">You are welcome to DM me on <a href="https://discord.com/users/597170794111434753" >Discord</a></p>
+    <img id="twitter" src="https://media.discordapp.net/attachments/798206604221743115/800820960503529512/image_2021-01-18_151602.png" onclick="window.open('https://twitter.com/stealthwave1');" style="cursor: pointer;"></img>
+<img id="github" src="https://media.discordapp.net/attachments/798206604221743115/800825030250070016/25231.png" onclick="window.open('https://github.com/stealth-wave');" style="cursor: pointer;"></img>
+<img id="toggle" src="https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png" onclick="LightTheme(); changeImage(); changeImage1(); changeImage2()"></img>
 
 </section>
+
+<img id="hireme" src="https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png" onclick="window.open('https://stealthwave.dev/hire');" style="cursor: pointer;"</img>
+<img id="Homebutton" src="https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png" onclick="window.open('https://stealthwave.dev/');" style="cursor: pointer;"</img>
+
+
+
 
 
 <script>
@@ -30,19 +37,40 @@ function LightTheme() {
 
 function changeImage() {
 
-if (document.getElementById("toggle").src == "https://media.discordapp.net/attachments/798206604221743115/802310220374081566/night_1.png")
-{
-    document.getElementById("toggle").src = "https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png";
-}
-else 
+if (document.getElementById("toggle").src == "https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png")
 {
     document.getElementById("toggle").src = "https://media.discordapp.net/attachments/798206604221743115/802310220374081566/night_1.png";
 }
+else 
+{
+    document.getElementById("toggle").src = "https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png";
+}
 }
 
 
+function changeImage1() {
 
+if (document.getElementById("hireme").src == "https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png")
+{
+    document.getElementById("hireme").src = "https://media.discordapp.net/attachments/798204114596397146/802379456995393586/image_4.png";
+}
+else 
+{
+    document.getElementById("hireme").src = "https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png";
+}
+}
 
+function changeImage2() {
+
+if (document.getElementById("Homebutton").src == "https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png")
+{
+    document.getElementById("Homebutton").src = "https://media.discordapp.net/attachments/798206604221743115/802383514812809226/image_5.png";
+}
+else 
+{
+    document.getElementById("Homebutton").src = "https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png";
+}
+}
 
 </script>
 <style>
@@ -53,7 +81,22 @@ body{
 
 }
 
-
+#Homebutton{
+    position:absolute;
+    width:2.5vw;
+    height:2.5vw;
+    left:87.2%;
+    top:3.5%;
+}
+#hireme{
+    position:absolute;
+    width:2.5vw;
+    height:2.5vw;
+    left:91.5%;
+    top:3.5%;
+    
+    
+}
 
 
 #toggle{
@@ -105,26 +148,14 @@ font-size:1vw;
     
 }
 
-@keyframes wheelHueColor {
-    from, to { color: hsl(324, 70%, 45%); }
-    10%      { color: hsl(360, 65%, 45%); }
-    20%      { color: hsl( 36, 80%, 45%); }
-    30%      { color: hsl( 72, 75%, 35%); }
-    40%      { color: hsl(108, 65%, 35%); }
-    50%      { color: hsl(144, 75%, 35%); }
-    60%      { color: hsl(180, 75%, 35%); }
-    70%      { color: hsl(216, 60%, 45%); }
-    80%      { color: hsl(252, 65%, 50%); }
-    90%      { color: hsl(288, 60%, 40%); }
-}
+
 
 #Stealthwave{
     position:absolute;
-    left:27%;
-    font-size:3vw;
-    top:25%;
-    color: hsl(324, 70%, 45%);
-    animation: wheelHueColor 1.5s infinite;
+    left:9%;
+    font-size:2.5vw;
+    top:28%;
+    color: hsl(0, 0%, 100%);
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -137,14 +168,14 @@ font-size:1vw;
     top:20%;
     left:20%;
     border-radius:3vw;
-    box-shadow: 10px 10px 5px #262626;
+    box-shadow: 7px 7px 3px #262626;
 
 }
 
 
 #code{
     position:absolute;
-    left:22%;
+    left:29.5%;
     font-size:1.5vw;
     top:50%;
     color:white;
