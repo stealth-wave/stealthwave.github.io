@@ -21,7 +21,7 @@
 <body>
 <Section id="Box">
     <img id="ME" src="https://media.discordapp.net/attachments/798206604221743115/800809772298534972/image_2.png" width="150vw" height="150vw">
-    <p id="Stealthwave">Hey, I'm stealthwave.</p>
+   
     <p id="code">I code things. Html & CSS Proficient. Nuxt.js novice.</p>
     <img id="twitter" src="https://media.discordapp.net/attachments/798206604221743115/800820960503529512/image_2021-01-18_151602.png" onclick="window.open('https://twitter.com/stealthwave1');" style="cursor: pointer;"></img>
 <img id="github" src="https://media.discordapp.net/attachments/798206604221743115/800825030250070016/25231.png" onclick="window.open('https://github.com/stealth-wave');" style="cursor: pointer;"></img>
@@ -33,6 +33,13 @@
 
 <a id="Hire" href="https://stealthwave.dev/hire"><img src="https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png" /></a>
 <a id="Home" href="https://stealthwave.dev/"><img src="https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png" /></a>
+
+<div class="Stealthwave">
+    <h1>Hey, I'm stealthwave</h1>
+  </div>
+
+
+
 
 </body>
 <script>
@@ -85,10 +92,45 @@ function LightThemeChange() {
   document.documentElement.classList.remove("LightTheme") // this will DISABLE lightmode=
 }
 
+var i = 0;
+var txt = 'Stealthwave'; /* The text */
+var speed = 40; /* The speed/duration of the effect in milliseconds */
 
 
 </script>
 <style>
+
+.Stealthwave h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden; 
+    border-right: .15em solid rgb(255, 255, 255); 
+    white-space: nowrap;
+    margin: 0 auto; 
+    letter-spacing: .12em; 
+    position:absolute;
+    left:32.5%;
+    font-size:3vw;
+    top:40%;
+    color: hsl(0, 0%, 100%);
+    animation: 
+    typing 4s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(197, 143, 26) }
+}
+
+
+
 
 body{
     overflow:hidden;
