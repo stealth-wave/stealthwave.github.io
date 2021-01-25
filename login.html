@@ -76,20 +76,20 @@ function page1func() {
 function page1func(){
         
    
-        Title1.style.top = "129%"
-        Title1.style.color = "white"
-        Title.style.color = "black"
-        Subtitle.style.color = "black"
-        Input.top = "160%"
-        Input.style.background = "black"
-        Input.style.color = "black"
-        Input.style.border = "3px solid black"
-        Title1.style.left = "60%"
-        Items.style.color = "white"
-        Item1.style.color = "white"
-        Item2.style.color = "white"
-        Item3.style.color = "white"
-        Title1.style.decoration = "underline"
+        Title1.style.top = "129%";
+        Title1.style.color = "white";
+        Title.style.color = "black";
+        Subtitle.style.color = "black";
+        Input.top = "160%";
+        Input.style.background = "black";
+        Input.style.color = "black";
+        Input.style.border = "3px solid black";
+        Title1.style.left = "60%";
+        Items.style.color = "white";
+        Item1.style.color = "white";
+        Item2.style.color = "white";
+        Item3.style.color = "white";
+       Input.style.cursor = "not-allowed";
         
 }
 
@@ -117,6 +117,12 @@ document.onkeydown = function (e) {
 
 <style>
 
+::selection {
+  color: rgb(255, 253, 253);
+  background: rgb(255, 255, 255);
+}
+
+
 body{
     background-color:black;
     overflow:hidden;
@@ -125,6 +131,7 @@ body{
 
 .page1func #Title1{
     left:45%;
+    
 }
 
 
