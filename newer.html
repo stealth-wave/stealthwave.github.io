@@ -7,108 +7,42 @@
     <meta name="Author" content="Stealthwave">
     <link rel="shortcut icon" href="https://media.discordapp.net/attachments/798206604221743115/800809772298534972/image_2.png">
     <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
-
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7LW0KFYM0"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-H7LW0KFYM0');
-</script>
+    
 </head>
 <body>
+    <!-- MAIN TITLE, SUBTITLE, AND SOCIAL ICONS-->
 <Section id="Box">
-    
-   
     <p id="code">I code things. Html & CSS Proficient. Nuxt.js novice.</p>
     <img id="twitter" src="https://media.discordapp.net/attachments/798206604221743115/800820960503529512/image_2021-01-18_151602.png" onclick="window.open('https://twitter.com/stealthwave1');" style="cursor: pointer;"></img>
 <img id="github" src="https://media.discordapp.net/attachments/798206604221743115/800825030250070016/25231.png" onclick="window.open('https://github.com/stealth-wave');" style="cursor: pointer;"></img>
-<img id="toggle" src="https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png" onclick="LightTheme(); changeImage(); changeImage1(); changeImage2(); LightThemeChange()"></img>
-
+<img id="toggle" src="https://media.discordapp.net/attachments/800187622705332265/803733057752137838/7pK8YynVOJUdOysgfEqppDgTmA7OBaYX7UpVVwDJgKem2nSRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRJkiRpBP8fUhOHbPyfwu8.png" onclick="LightTheme(); changeImage(); changeImage1(); changeImage2(); LightThemeChange()"></img>
 </section>
 
-<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-dotted" width="48" height="48" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <line x1="7.5" y1="4.21" x2="7.5" y2="4.22" />
-  <line x1="4.21" y1="7.5" x2="4.21" y2="7.51" />
-  <line x1="3" y1="12" x2="3" y2="12.01" />
-  <line x1="4.21" y1="16.5" x2="4.21" y2="16.51" />
-  <line x1="7.5" y1="19.79" x2="7.5" y2="19.8" />
-  <line x1="12" y1="21" x2="12" y2="21.01" />
-  <line x1="16.5" y1="19.79" x2="16.5" y2="19.8" />
-  <line x1="19.79" y1="16.5" x2="19.79" y2="16.51" />
-  <line x1="21" y1="12" x2="21" y2="12.01" />
-  <line x1="19.79" y1="7.5" x2="19.79" y2="7.51" />
-  <line x1="16.5" y1="4.21" x2="16.5" y2="4.22" />
-  <line x1="12" y1="3" x2="12" y2="3.01" />
-</svg>
 
 
+<!--TYPER FUNCTION-->
 <div class="Stealthwave">
     <h1>Hey, I'm stealthwave</h1>
   </div>
-
-
-
-
 </body>
 <script>
+
+
 function LightTheme() {
-  var element = document.body;
-  element.classList.toggle("LightTheme");
+        var element = document.body;
+        element.classList.toggle("LightTheme");
+      
+        
+      }
+      
 
-  
-}
 
-
-function changeImage() {
-
-if (document.getElementById("toggle").src == "https://media.discordapp.net/attachments/798206604221743115/802310220374081566/night_1.png")
-{
-    document.getElementById("toggle").src = "https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png";
-}
-else 
-{
-    document.getElementById("toggle").src = "https://media.discordapp.net/attachments/798206604221743115/802310220374081566/night_1.png";
-}
-}
-
-function changeImage1() {
-
-if (document.getElementById("Hire").src == "https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png")
-{
-    document.getElementById("Hire").src = "https://media.discordapp.net/attachments/798204114596397146/802379456995393586/image_4.png";
-}
-else 
-{
-    document.getElementById("Hire").src = "https://media.discordapp.net/attachments/798204114596397146/802374134419816469/briefcase-xxl.png";
-}
-}
-
-function changeImage2() {
-
-if (document.getElementById("Home").src == "https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png")
-{
-    document.getElementById("Home").src = "https://media.discordapp.net/attachments/798206604221743115/802383514812809226/image_5.png";
-}
-else 
-{
-    document.getElementById("Home").src = "https://media.discordapp.net/attachments/798206604221743115/802380954747404348/home-5-xxl.png";
-}
-}
-
-function LightThemeChange() {
-  document.documentElement.classList.add("LightTheme") // this will enable light mode
-  document.documentElement.classList.remove("LightTheme") // this will DISABLE lightmode=
-}
-
+// TYPER MECAHNISM 
 var i = 0;
-var txt = 'Stealthwave'; /* The text */
-var speed = 40; /* The speed/duration of the effect in milliseconds */
+var txt = 'Stealthwave'; // text 
+var speed = 40; // speed 
 
-// NOTE: Click Run if you don't see the waves.
+//*** THE WAVE AFFECT *** 
 
 
 // Create canvas.
@@ -158,14 +92,14 @@ function Wave (options) {
     frequency: .02,
     current: .100,
     verticalOffset: 0,
-    fillStyle: "#FFFFFF",
-    strokeStyle: "#3a99b8",
+    fillStyle: "#2F3333",
+    strokeStyle: "#464545",
     ...options
   };
   this.tick = 0;
   
   this.draw = function () {
-    ctx.shadowColor = "#4aA9C8";
+    ctx.shadowColor = "#464545";
     ctx.shadowBlur = 6;
     ctx.shadowOffsetX = 0;
     ctx.shadowOffsetY = 2;
@@ -201,10 +135,21 @@ function Wave (options) {
 
 body {
   margin: 0;
-  background-image: linear-gradient(#000000, #000000 10%, #000000 40%, #000000);
+  background-image: linear-gradient(#2fa7d6, #2fa7d6 10%, #6dabdd 40%, #99c8e4);
+}
+
+.LightTheme{
+  margin: 0;
+  background-image: linear-gradient(#ffffff, #ffffff 10%, #ffffff 40%, #ffffff);
 }
 
 
+.LightTheme #toggle{
+  position:absolute;
+  
+  
+  
+}
 
 .Stealthwave h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -226,20 +171,24 @@ body {
 .LightTheme .Stealthwave h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow: hidden; 
-    border-right: .15em solid rgb(255, 255, 255); 
+    border-right: .15em solid rgb(0, 0, 0); 
     white-space: nowrap;
     margin: 0 auto; 
     letter-spacing: .12em; 
     position:absolute;
-    left:32.5%;
-    font-size:3vw;
-    top:40%;
-    color: hsl(0, 0%, 100%);
+    left:5%;
+    font-size:4vw;
+    top:15%;
+    color: hsl(0, 0%, 0%);
     animation: 
     typing 4s steps(30, end),
     blink-caret .5s step-end infinite;
 }
 
+
+.LightTheme #code{
+  color:black;
+}
 
 /* The typing effect */
 @keyframes typing {
@@ -267,64 +216,30 @@ body{
 }
 
 
-.LightTheme{
-    Background-color:#d5d5d5;
-}
-
-#Secret{
-    position:absolute;
-    color:#302f2f;
-    font-size:.2vw;
-    text-decoration:none;
-    border: 5px solid #302f2f;
-    top:97%;
-    left:0.3%;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-
-}
-
-#Hire img{
-    position:absolute;
-    height:2.5vw;
-    width:2.5vw;
-    left:91.5%;
-    top:3.5%;
-
-}
-
-#Home img{
-    position:absolute;
-    height:2.5vw;
-    width:2.5vw;
-    left:87.2%;
-    top:3.5%;
-}
-
 
 
 .LightTheme #twitter{
     position:absolute;
-    mix-blend-mode:difference;
+    mix-blend-mode:color black;
 }
 
 .LightTheme #github{
     position:absolute;
-    mix-blend-mode:difference;
+    mix-blend-mode:color black;
 }
 
 #toggle{
     position:absolute;
-    width:2.5vw;
-    height:2.5vw;
-    left:90%;
-    top:5%;
+    width:3.5vw;
+    height:3.5vw;
+    left:150%;
+    top:2%;
     cursor:pointer;
-}
-.light-mode{
-    background-color:#dedede;
- 
+    mix-blend-mode:difference;
+    
     
 }
+
 
 
 
@@ -336,31 +251,6 @@ body{
     width:3vw;
     height:3vw;
 }
-
-#Redirect{
-position:absolute;
-color:white;
-top:90.7%;
-left:7%;
-font-family:verdana;
-font-size:1vw;
-
-
-}
-
-#Redirect Info:hover{
-    position:absolute;
-    color:white;
-}
-
-
-#ME{
-    position:absolute;  
-    left:41%;
-    top:-2%;
-    
-}
-
 
 
 #Stealthwave{
@@ -391,6 +281,7 @@ font-size:1vw;
     height:5vw;
     top:90%;
     left:43%;
+    mix-blend-mode:color white;
     
 }
 
@@ -403,6 +294,7 @@ font-size:1vw;
     height:4vw;
     top:90%;
     left:50.5%;
+    mix-blend-mode:color white;
     
 }
 
