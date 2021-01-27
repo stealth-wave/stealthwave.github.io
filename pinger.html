@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Tutorial</title>
+  </head>
+  <body>
+    <button id="pinger" onclick="sendMessage()">Ping Asphyixii</button>
+  </body>
+
+<p id="interested">Interested in annoying someone to death???</p>
+<p id="Never">Never Fear! Asphyixii pinger is here. Everytime you hit the button, it sends a post request to discord to annoy the hell out of Asphyixii.</p>
+
+  <script>
+    function sendMessage() {
+      var request = new XMLHttpRequest();
+      request.open("POST", "https://ptb.discord.com/api/webhooks/804092453053136937/5aGLcGPxNKPzOjLed4ug5LioP9Ot4W4A3kWNlj3lx-ulMkH8nd0rqAZdq2pR6mPsTgSV");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      var params = {
+        username: "Hi ASP",
+        avatar_url: "",
+        content: "<@465567913110142977>"
+      }
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
+</html>
+
+<style>
+
+
+
+  #pinger{
+    position:absolute;
+    top:13%;
+  }
+</style>
