@@ -26,6 +26,7 @@
     <img id="twitter" src="https://media.discordapp.net/attachments/798206604221743115/800820960503529512/image_2021-01-18_151602.png" onclick="window.open('https://twitter.com/stealthwave1');" style="cursor: pointer;"></img>
 <img id="github" src="https://media.discordapp.net/attachments/798206604221743115/800825030250070016/25231.png" onclick="window.open('https://github.com/stealth-wave');" style="cursor: pointer;"></img>
 <img id="toggle" src="https://media.discordapp.net/attachments/798206604221743115/802316806105989190/image_3.png" onclick="LightTheme(); changeImage(); changeImage1(); changeImage2(); LightThemeChange()"></img>
+<img id="Triangle" src="https://media.discordapp.net/attachments/798204114596397146/804074769036083276/note-xxl.png" onmousedown="audio.play()"></img>
 
 </section>
 
@@ -182,12 +183,26 @@ function Wave (options) {
     return (canvas.height/2 - (Math.cos(x * this.options.frequency - this.tick) * this.options.amplitude * Math.cos(this.tick))) + Math.sin(this.tick) * (this.options.amplitude/2) + this.options.verticalOffset;
   }
 }
+
+var audio = new Audio("./assets/sound.mp3");
+
+
+
 </script>
 <style>
 
 body {
   margin: 0;
   background-image: linear-gradient(#5985e6, #5985e6 10%, #78c3ee 40%, #bedbdf);
+}
+
+#Triangle{
+  position:absolute;
+  width:3vw;
+  height:3vw;
+  cursor:pointer;
+  left:95%;
+  top:3%;
 }
 
 
