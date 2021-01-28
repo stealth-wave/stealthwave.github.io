@@ -174,7 +174,12 @@ function Wave (options) {
 
 var audio = new Audio("./assets/sound.mp3");
 
+const username = 'stealthwave'
+const LASTFM_TOKEN = 'e6eb8e20380cfe593ba23b921948f22b'
 
+fetch(`https://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&user=${username}&api_key=${LASTFM_TOKEN}&format=json&limit=1`)
+  .then(res => res.json())
+  .then(data => console.log(data));
 
 </script>
 <style>
