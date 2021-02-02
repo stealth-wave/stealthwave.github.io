@@ -27,3 +27,5 @@ function changeImage() {
         document.documentElement.classList.remove("LightTheme") // this will DISABLE lightmode=
       }
       
+      <a id="Home" href="https://stealthwave.dev">Home</a>
+<a id="About" href="https://stealthwave.dev/projects">About</a>
