@@ -1,5 +1,5 @@
 body{
-    background: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
     overflow:hidden;
   
   
@@ -14,33 +14,10 @@ body{
     position:absolute;
     left:95.5%;
     cursor:pointer;
-  }
-  #Home{
-    position:absolute;
-      font-size:2vw;
-      color:rgb(255, 255, 255);
-      left:62%;
-      top:37.5%;
-      font-family: 'Poppins', sans-serif;
-      text-decoration:none;
-      transition:all 0.4s;
-  } #Home:hover{
-    color:#1fda82;
-  } #About{
-    position:absolute;
-      font-size:2vw;
-      color:rgb(255, 255, 255);
-      left:73%;
-      top:37.5%;
-      font-family: 'Poppins', sans-serif;
-      text-decoration:none;
-      transition:all 0.4s;
-  } #About:hover{
-      color:#1fda82;
   } #Title{
         position:absolute;
         font-size:4.5vw;
-        color:rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
         left:4%;
         top:25%;
         font-family: 'Poppins', sans-serif;
@@ -53,7 +30,7 @@ body{
         font-family: 'Poppins', sans-serif;
       } #Github{
         font-family: 'Poppins', sans-serif;
-        color:white;
+        color:rgb(0, 0, 0);
         position:absolute;
         font-size:1.5vw;
         top:56%;
@@ -62,7 +39,7 @@ body{
         text-decoration:none;
         transition:all 0.4s;
     } #Github:hover{
-    color:#da1f67;
+    color:#d61e27;
     transition:all 0.4s;
     }
       #GithubIcon{
@@ -82,7 +59,7 @@ body{
         }
         #Twitter1{
         font-family: 'Poppins', sans-serif;
-        color:rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
         position:absolute;
         font-size:1.5vw;
         top:56%;
@@ -97,7 +74,7 @@ body{
         }
         #Email{
           font-family: 'Poppins', sans-serif;
-        color:white;
+        color:rgb(0, 0, 0);
         position:absolute;
         border-radius:1vw;
         font-size:1.5vw;
@@ -120,7 +97,7 @@ body{
           cursor:pointer;
     } #Comission{
         font-family: 'Poppins', sans-serif;
-        color:rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
         position:absolute;
         font-size:1.5vw;
         top:56%;
