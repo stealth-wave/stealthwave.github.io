@@ -10,7 +10,7 @@ body{
     color:black;
   }
   
-  
+
   #GLOBE{
     position:absolute;
     left:95.5%;
@@ -43,13 +43,14 @@ body{
     color:#d61e27;
     transition:all 0.4s;
     }
-      #GithubIcon{
-        position:absolute;
-        widows:2.2vw;
-        height:2.2vw;
-        top:56%;
-        left:3.7%;
-        cursor:pointer;
+     #GithubImage{
+      position:absolute;
+      width:2.2vw;
+      height:2.2vw;
+      left:4%;
+      top:56%;
+      cursor:pointer;
+     
         } #TwitterIcon{
           position:absolute;
           width:2.2vw;
