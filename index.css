@@ -1,12 +1,12 @@
 body{
-    background: rgb(255, 255, 255);
+    background: black;
     overflow:hidden;
   
   
   }
   
   ::selection{
-    background-color:#da1f67;
+    background-color:#ffffff;
     color:black;
   }
   
@@ -18,7 +18,7 @@ body{
   } #Title{
         position:absolute;
         font-size:4.5vw;
-        color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
         left:4%;
         top:25%;
         font-family: 'Poppins', sans-serif;
@@ -31,7 +31,7 @@ body{
         font-family: 'Poppins', sans-serif;
       } #Github{
         font-family: 'Poppins', sans-serif;
-        color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
         position:absolute;
         font-size:1.5vw;
         top:56%;
@@ -40,8 +40,8 @@ body{
         text-decoration:none;
         transition:all 0.4s;
     } #Github:hover{
-    color:#d61e27;
-    transition:all 0.4s;
+    color:#7d83a9;
+    transition: all 0.4s;
     }
      #GithubImage{
       position:absolute;
@@ -50,18 +50,16 @@ body{
       left:4%;
       top:56%;
       cursor:pointer;
-     
-        } #TwitterIcon{
+     }#TwitterIcon{
           position:absolute;
           width:2.2vw;
           height:2.2vw;
           left:20.5%;
           top:56%;
           cursor:pointer;
-        }
-        #Twitter1{
+        }#Twitter1{
         font-family: 'Poppins', sans-serif;
-        color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
         position:absolute;
         font-size:1.5vw;
         top:56%;
@@ -70,13 +68,12 @@ body{
         text-decoration:none;
         transition:all 0.4s;
         } #Twitter1:hover{
-          color:#da1f67;
+          color:#7d83a9;
           cursor:pointer;
           transition:all 0.4s;
-        }
-        #Email{
+        }#Email{
           font-family: 'Poppins', sans-serif;
-        color:rgb(0, 0, 0);
+        color:rgb(255, 255, 255);
         position:absolute;
         border-radius:1vw;
         font-size:1.5vw;
@@ -86,37 +83,14 @@ body{
         text-decoration:none;
         transition:all 0.4s;
         } #Email:hover{
-          color:#da1f67;
+          color:#7d83a9;
           transition:all 0.4s;
-        }
-        
-        #MailIcon{
-      position:absolute;
+        } #MailIcon{
+          position:absolute;
           width:2.2vw;
           height:2.2vw;
           left:37%;
           top:56%;
           cursor:pointer;
-    } #Comission{
-        font-family: 'Poppins', sans-serif;
-        color:rgb(0, 0, 0);
-        position:absolute;
-        font-size:1.5vw;
-        top:56%;
-        left:64%;
-        cursor:pointer;
-        text-decoration:none;
-        transition:all 0.4s;
-    } #Comission:hover{
-        color:#da1f67;
-          cursor:pointer;
-          transition: all 0.4s;
-    } #ComIcon{
-        position:absolute;
-          width:2.2vw;
-          height:2.2vw;
-          left:61.5%;
-          top:56%;
-          cursor:pointer;
-    }
+        }
   
