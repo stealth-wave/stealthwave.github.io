@@ -18,7 +18,7 @@
 
 		<!-- Header -->
 			<header id="header">
-				<h1 id="Name">Stealthwave</h1>
+				<h1 id="Name" onclick="reload()">Stealthwave</h1>
 				<p>Hey! I'm stealthwave. I'm a web developer and student from the United States.<br />
 				I code in HTML, CSS, Javascript, & Nuxt.js<a href="http://html5up.net"></a>.</p>
 			</header>
@@ -41,11 +41,18 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/main.js"></script>
+			<script>console.log('%c Why are you in my console nerd ', 'background: #222; color: #FF0000');
+			
+				function reload(){
+					window.location.reload()
+				}
+			</script>
 	</body>
 	<style>
 		#Name{
 			position:absolute;
 			top:-65%;
+			cursor:pointer;
 		} #wave{
 		position:absolute;
 		top:80%;
