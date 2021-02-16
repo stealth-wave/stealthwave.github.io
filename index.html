@@ -22,10 +22,7 @@
 				<p>Hey! I'm stealthwave. I'm a web developer and student from the United States.<br />
 				I code in HTML, CSS, Javascript, & Nuxt.js<a href="http://html5up.net"></a>.</p>
 			</header>
-
-	
-		
-		<!-- Footer -->
+	<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
 					<li><a href="https://github.com/stealth-wave" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -38,6 +35,31 @@
 
 <!--Wave-->
 <div id="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.99 C150.00,150.00 349.20,-49.99 500.00,49.99 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #1e1d26;"></path></svg></div>
+
+
+<!--Dropdown-->
+<link rel="stylesheet" href="/path/to/FONTAWESOME.css">
+
+<script src="/path/to/jquery.min.js"></script>
+
+<div id="Menu">
+<nav>
+	<div>
+	  <i class="fas fa-bars"></i>
+	</div>
+	<ul>
+	  <li><a href="#">Menu<i class="fas fa-caret-down"></i></a>
+		<ul>
+			<li><a href="https://stealthwave.dev">Home</a></li>
+		  <li><a href="https://stealthwave.dev/setup"><a href="https://stealthwave.dev/setup"></a></a></li>
+		  <li><a href="https://stealthwave.dev/projects"></a></li>
+	
+		</ul>
+	  </li>
+	  </li>
+	</ul>
+  </nav>
+</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/main.js"></script>
@@ -63,6 +85,94 @@
 		top:80%;
 		left:0%;
 		width:100vw;
-		} 
+		} #Menu{
+			position:absolute;
+			left:60%;
+			top:38%;
+		}
+
+		ul {
+  list-style-type: none;
+  background-color:#16151d;
+  position: relative;
+  border:none;
+  
+ 
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  border:none;
+}
+
+ul li:hover {
+  background-color: #16151d;
+  border:none;
+  transition:all 0.5s;
+}
+
+ul li a {
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+  font-size: 16px;
+  border:none;
+  display: block;
+}
+
+ul ul {
+  position: absolute;
+  min-width: 200px;
+  background-color:#16151d;
+  display: none;
+  border:none;
+}
+
+ul ul li {
+  display: block;
+  background-color: #16151d;
+  border:none;
+}
+
+ul li:hover ul {
+  display: block;
+  border:none;
+}
+
+.fa-caret-down {
+  margin-left: 10px;
+}
+
+nav div {
+  background-color: rgb(36, 36, 36);
+  color: #16151d;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+  border:none;
+}
+
+
+
+
+		
 	</style>
+	<script>
+		$('nav div').click(function() {
+  $('ul').slideToggle();
+  $('ul ul').css('display', 'none');
+});
+
+$('ul li').click(function() {
+  $('ul ul').slideUp();
+  $(this).find('ul').slideToggle();
+});
+
+$(window).resize(function() {
+  if($(window).width() > 768) {
+    $('ul').removeAttr('style');
+  }
+});
+	</script>
 </html>
