@@ -24,8 +24,8 @@ footer, header, hgroup, menu, nav, section {
   display: block; }
 
 ::selection{
-  background-color:white;
-  color:black;
+  background-color:#16151d;
+
 }
 
 body {
