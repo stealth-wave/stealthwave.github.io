@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    <Title>Weather</Title>
+    <meta name="description" content="A simple weather site">
+    <meta name="Author" content="Stealthwave">
+    <link rel="shortcut icon" href="https://media.discordapp.net/attachments/803985145626886175/811398576315039754/image_6.png">
+    <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#29b6e6">
+    <meta name="og:image" content="https://media.discordapp.net/attachments/803985145626886175/811398576315039754/image_6.png">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+</html>
+<body>
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+    <div id="Display" class="elfsight-app-31d77c6c-7373-4853-b349-8e5051d74214"></div>
+    <div id="cover"></div>
+    <p id="Title">You're Local Weather Forecast </p>
+
+    <!--Dropdown-->
+<link rel="stylesheet" href="/path/to/FONTAWESOME.css">
+
+<script src="/path/to/jquery.min.js"></script>
+
+<div id="Menu">
+<nav>
+	<div>
+	  <i class="fas fa-bars"></i>
+	</div>
+	<ul>
+	  <li><a href="#">Menu<i class="fas fa-caret-down"></i></a>
+		<ul>
+			<li><a href="https://stealthwave.dev">Home</a></li>
+		  <li><a href="https://stealthwave.dev/weather">Weather<a href="https://stealthwave.dev/weather"></a></a></li>
+		  <li><a href="https://stealthwave.dev/projects"></a></li>
+	
+		</ul>
+	  </li>
+	  </li>
+	</ul>
+  </nav>
+</div>
+</body>
+<style>
+    body{
+        background-color:#000000;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    } #Display{
+        position:absolute;
+        top:25%;
+        left:3.2%;
+    } #cover{
+        background-color:#000000;
+        position:absolute;
+        width:11vw;
+        height:2vw;
+        top:78.5%;
+        left:7.9%;
+        z-index: 999991;
+        overflow:visible;
+      
+    } #Title{
+        color:white;
+        position:absolute;
+        font-size:2vw;
+        left:4.5%;
+        top:10%;
+    }  #Menu{
+			position:absolute;
+			left:60%;
+			top:10%;
+		}
+
+        
+		ul {
+  list-style-type: none;
+  background-color:#000000;
+  position: relative;
+  border:none;
+  
+ 
+}
+
+ul li {
+  display: inline-block;
+  position: relative;
+  border:none;
+}
+
+ul li:hover {
+  background-color: #000000;
+  border:none;
+  transition:all 0.5s;
+}
+
+ul li a {
+  color: rgb(240, 240, 240);
+  text-decoration: none;
+  font-size: 16px;
+  border:none;
+  display: block;
+}
+
+ul ul {
+  position: absolute;
+  min-width: 200px;
+  background-color:#000000;
+  display: none;
+  border:none;
+}
+
+ul ul li {
+  display: block;
+  background-color: #000000;
+  border:none;
+}
+
+ul li:hover ul {
+  display: block;
+  border:none;
+}
+
+.fa-caret-down {
+  margin-left: 10px;
+}
+
+nav div {
+  background-color: rgb(0, 0, 0);
+  color: #16151d;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  display: none;
+  border:none;
+}
+
+
+
+
+		
+	</style>
+	<script>
+		$('nav div').click(function() {
+  $('ul').slideToggle();
+  $('ul ul').css('display', 'none');
+});
+
+$('ul li').click(function() {
+  $('ul ul').slideUp();
+  $(this).find('ul').slideToggle();
+});
+
+$(window).resize(function() {
+  if($(window).width() > 768) {
+    $('ul').removeAttr('style');
+  }
+});
+	</script>
+</style>
